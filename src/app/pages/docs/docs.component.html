@@ -1,0 +1,61 @@
+<div class="sidebar">
+    <ul>
+      <li (click)="navigateTo('alla-guide')">
+        Alla Guide
+        <ul *ngIf="activeParent === 'alla-guide'">
+            <li><a [routerLink]="['lorem']">Lorem</a></li>
+            <li><a [routerLink]="['ipsum']">Ipsum</a></li>
+            <li><a [routerLink]="['dolor']">Dolor</a></li>    
+        </ul>
+      </li>
+      <li (click)="navigateTo('bulk-notification')"><img src="path/to/icon.png" alt="icon">Bulk Notification</li>
+      <li (click)="navigateTo('guide-common')"><img src="path/to/icon.png" alt="icon">Guide Common</li>
+      <li (click)="navigateTo('mukuru')">
+        <img src="https://res.cloudinary.com/dxwcrbqes/image/upload/e_background_removal/f_png/v1724338226/muku_hwxokk.png" alt="icon">
+        Mukuru</li>
+      <li (click)="navigateTo('wester-union')">Western Union</li>
+      <li (click)="navigateTo('money-gram')">
+        <img src="https://res.cloudinary.com/dxwcrbqes/image/upload/e_background_removal/f_png/v1722002265/moneygr_upgx9z.jpg" alt="">
+        MoneyGram</li>  
+      <li (click)="navigateTo('saba-balar')">
+        <img src="https://res.cloudinary.com/dxwcrbqes/image/upload/e_background_removal/f_png/v1722002263/sabbabalard_f0eb2t.jpg" alt="">
+        Saba ba lar</li>
+      <li (click)="navigateTo('')">Western Union</li>
+      <li (click)="navigateTo('')">Western Union</li>
+      <li (click)="navigateTo('')">Western Union</li>
+      <li (click)="navigateTo('')">Western Union</li>
+      <li (click)="navigateTo('')">Western Union</li>
+      <li (click)="navigateTo('')">Western Union</li>
+      <li (click)="navigateTo('')">Western Union</li>
+      <li (click)="navigateTo('')">Western Union</li>
+      <li (click)="navigateTo('')">Western Union</li>
+      <li (click)="navigateTo('')">Western Union</li>
+      <li (click)="navigateTo('')">Western Union</li>
+      <li (click)="navigateTo('')">Western Union</li>
+      <li (click)="navigateTo('')">Western Union</li>
+      <li (click)="navigateTo('')">Western Union</li>
+      <li (click)="navigateTo('')">Western Union</li>
+      <li (click)="navigateTo('')">Western Union</li>
+      <li (click)="navigateTo('')">Western Union</li>
+      <li (click)="navigateTo('')">Western Union</li>
+      <li (click)="navigateTo('')">Western Union</li>
+      <li (click)="navigateTo('')">Western Union</li>
+      <li (click)="navigateTo('')">Western Union</li>
+      <li (click)="navigateTo('')">Western Union</li>
+      <li (click)="navigateTo('')">Western Union</li>
+      <li (click)="navigateTo('money-gram')">MoneyGram</li>
+      <li (click)="navigateTo('')">Guide Operateur MTN</li>
+      <li (click)="navigateTo('')">Western Union</li>
+      <li (click)="navigateTo('')">Western Union</li>
+      <li (click)="navigateTo('')">Western Union</li>
+      <li (click)="navigateTo('')">Western Union</li>
+      <li (click)="navigateTo('')">Western Union</li>
+      <li (click)="navigateTo('')">Western Union</li>
+      <li (click)="navigateTo('')">Western Union</li> 
+    </ul>
+  </div>
+
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+  

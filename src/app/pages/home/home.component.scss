@@ -1,0 +1,62 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+  
+    .logo {
+      font-size: 24px;
+    }
+  
+    nav a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+    }
+  
+    .contact-btn, .start-btn {
+      background-color: #ff6600;
+      border: none;
+      padding: 10px 20px;
+      color: white;
+      cursor: pointer;
+    }
+  
+    .search-bar {
+      padding: 5px;
+      border-radius: 5px;
+      border: none;
+    }
+  }
+  
+  .hero {
+    background-image: url('https://res.cloudinary.com/dxwcrbqes/image/upload/v1722002255/flashTransf_tudcmy.png');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+  
+    .hero-content {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+  
+      h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+      }
+  
+      p {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  
