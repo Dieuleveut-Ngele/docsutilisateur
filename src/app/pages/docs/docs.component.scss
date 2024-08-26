@@ -2,6 +2,60 @@
     margin-left: 50px;
 }
 
+// .sidebar {
+//     width: 270px;
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     height: 100%;
+//     overflow-y: auto;
+//     background-color: #f4f4f4;
+//     font-family: 'Arial, sans-serif';
+//     font-size: 14px;
+//     padding: 10px;
+//     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+//     z-index: 1000;
+// }
+
+// .sidebar ul li {
+//     margin-bottom: 10px;
+//     align-items: center;
+//     height: 40px; 
+//     line-height: 40px; 
+//     display: flex;
+//     padding: 7px 10px; 
+// }
+
+// .sidebar ul li img {
+//     margin-right: 10px;
+//     width: 20px;
+//     height: 20px;
+// }
+
+// .sidebar li:hover {
+//     background-color: #e0e0e0;
+//     border-radius: 5px;
+//     cursor: pointer;
+//     color: #333; 
+// }
+
+// .sidebar ul li a {
+//     list-style-type: none;
+//     text-decoration: none;
+//     color: #000;
+// }
+
+// .sidebar ul li a:hover {
+//     text-decoration: underline;
+// }
+
+// .sidebar ul li.selected {
+//     background-color: #d0d0d041; 
+//     font-weight: bold; 
+//     border-radius: 5px;
+// }
+
+
 .sidebar {
     width: 270px;
     position: fixed;
@@ -14,9 +68,9 @@
     font-size: 14px;
     padding: 10px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    z-index: 1000; 
 }
 
+ 
 .sidebar ul li {
     margin-bottom: 10px;
     align-items: center;
@@ -28,17 +82,20 @@
     height: 20px;
 }
 
-.sidebar ul li:hover {
+.sidebar li:hover {
     background-color: #e0e0e0;
     border-radius: 5px;
     cursor: pointer;
     padding: 7px;
+    background-color: #f0f0f0;
+    color: #333; 
 }
 
 .sidebar ul li a {
     text-decoration: none;
     color: #000;
     text-decoration: underline;
+    
 }
 
 .sidebar ul li a:hover {
@@ -53,8 +110,6 @@
 }
 
 .content {  
-    // margin-left: 270px;
-    // margin-right: 270px;
     padding: 10px;
     padding-bottom: 100%;
     padding-left: 400px;
@@ -67,12 +122,7 @@
 
 
 .content img {
-    // margin-left: 270px;
-    // margin-right: 300px;
-    // width: 200px; 
-    // height: 200px;
-    // max-width: 800px;
-     
+
     display: block;
     border-radius: 15px; 
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
@@ -81,7 +131,7 @@
     height: auto; /* Maintient le ratio d'aspect de l'image */
     max-width: 120%; /* Permet de dépasser légèrement la largeur d'origine si nécessaire */
     object-fit: cover; /* Assure que l'image couvre bien l'espace */
-    display: block; /* Supprime les espaces blancs en dessous de l'image */
+    display: block; 
    
 }
 
