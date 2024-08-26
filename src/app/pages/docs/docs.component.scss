@@ -52,36 +52,42 @@
     border-radius: 5px;
 }
 
-.content {
-    margin-left: 270px; /* Pour compenser la largeur de la sidebar */
-    margin-right: 200px;
-    padding: 50px;
+.content {  
+    // margin-left: 270px;
+    // margin-right: 270px;
+    padding: 10px;
+    padding-bottom: 100%;
+    padding-left: 400px;
+    padding-right: 150px;
     background-color: #ffffff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 2px;
     font-family: 'Arial, sans-serif';
-    // max-width: calc(100% - 400px); /* Largeur maximale du contenu */
-    overflow: hidden; /* Empêcher le débordement si nécessaire */
-    text-align: center;
+    // overflow: hidden; /* Empêcher le débordement si nécessaire */
+    text-align: justify;
 }
 
 
 .content img {
-    margin-left: 270px;
-    margin-right: 200px;
-    width: 100px; /* L'image prendra toute la largeur de son conteneur */
-    height: 100px;
-    max-width: 500px; /* Limite la taille maximum */
+    // margin-left: 270px;
+    // margin-right: 300px;
+    // width: 200px; 
+    // height: 200px;
+    // max-width: 800px;
+     
     display: block;
-    // margin: 20px auto; /* Centre les images avec des marges */
-    border-radius: 15px; /* Arrondir les coins */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Ajoute une ombre */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation douce */
+    border-radius: 15px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    width: 100%;
+    height: auto; /* Maintient le ratio d'aspect de l'image */
+    max-width: 120%; /* Permet de dépasser légèrement la largeur d'origine si nécessaire */
+    object-fit: cover; /* Assure que l'image couvre bien l'espace */
+    display: block; /* Supprime les espaces blancs en dessous de l'image */
+   
 }
 
 .content img:hover {
-    transform: scale(1.05); /* Agrandit légèrement l'image au survol */
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Accentue l'ombre au survol */
+    transform: scale(1.05); 
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); 
 }
 
 

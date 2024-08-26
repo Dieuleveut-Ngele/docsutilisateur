@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { HeroSectionComponent } from './hero-section/hero-section.component';
 
 
 @Component({
@@ -7,6 +8,7 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [
    RouterLink,
+   HeroSectionComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',

@@ -4,24 +4,65 @@ header {
     align-items: center;
     padding: 10px 20px;
     background-color: #333;
+    color: white;  
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  
+.logo {
+    font-size: 24px;
+}
+
+
+.logo {  
+    font-size: 24px;  
+    margin: 0; 
+    color: #ffffff; 
+}  
+          
+.logo-image {  
+    height: 50px;   
+    width: auto;  
+    margin-right: 10px;   
+    vertical-align: middle;  
+} 
+  
+nav a {
+    margin: 0 10px;
     color: white;
-  
-    .logo {
-      font-size: 24px;
+    text-decoration: none;
     }
-  
-    nav a {
-      margin: 0 10px;
-      color: white;
-      text-decoration: none;
-    }
+    .nav-links a.active {  
+        font-weight: bold;  
+      }
+      
+      .nav-links a {
+        display: inline-block;
+        color: #ffffff; 
+        margin: 0 .45em;
+        padding: 0 .85em;
+        text-decoration: none;
+        background-image: linear-gradient(to right, currentColor, currentColor);
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: 0% 1px;
+        transition:  margin-top 5s;
+        
+      }
+      
+      .nav-links a:hover {
+        color: rgb(255, 196, 1);
+        background-size: 100% 1px;
+        
+      }
+      
   
     .contact-btn, .start-btn {
-      background-color: #ff6600;
-      border: none;
-      padding: 10px 20px;
-      color: white;
-      cursor: pointer;
+        background-color: #ffcc00;  
+        border: none;  
+        padding: 10px 20px;  
+        border-radius: 5px;  
+        cursor: pointer;  
+        font-size: 1rem;
     }
   
     .search-bar {
@@ -30,33 +71,37 @@ header {
       border: none;
     }
   }
-  
-  .hero {
-    background-image: url('https://res.cloudinary.com/dxwcrbqes/image/upload/v1722002255/flashTransf_tudcmy.png');
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    color: white;
-  
-    .hero-content {
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 20px;
-      text-align: center;
-      border-radius: 10px;
-  
-      h1 {
-        font-size: 36px;
-        margin-bottom: 10px;
+
+  .search-container {  
+        display: flex;  
+        align-items: center; 
+        padding: 10px;
+        
+      }  
+      
+      .search-input {  
+        padding: 8px; 
+        padding-right: 15px; 
+        border: none;  
+        border-radius: 25px; 
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+      } 
+      
+      .search-input:focus{
+          border: 1px solid #ffc403;
+          background: #fff;
+          outline: 0;    
       }
-  
-      p {
-        font-size: 18px;
-        margin-bottom: 20px;
+      
+      .search-btn {  
+        background-color: #ffc403;  
+        border: none;  
+        cursor: pointer;  
+        padding: 8px;  
+        border-radius: 25px; 
+      } 
+      .btn-container {
+        padding: 10px;
       }
-    }
-  }
+      
   
