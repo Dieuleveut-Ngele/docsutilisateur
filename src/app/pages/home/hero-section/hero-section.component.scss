@@ -46,8 +46,18 @@ h1 {
   .btn-commencer {  
     animation: slideInButton 1s forwards;  
     opacity: 0; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
   }  
   
+  .btn-commencer:hover {
+    background-color: #e0b120; /* Changement de couleur */
+    transform: scale(1.05); /* Agrandissement léger */
+  }
+
   @keyframes slideIn {  
     0% {  
         transform: translateX(-100%);   
@@ -83,8 +93,7 @@ h1 {
     height: 150px;
     border-radius: 50%;
     animation: avatarBounce 2s infinite;
-  }
-  
+  } 
   .welcome-message {
     margin-top: 20px;
     font-size: 24px;
