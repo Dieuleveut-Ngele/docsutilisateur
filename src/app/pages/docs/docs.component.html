@@ -9,6 +9,7 @@
             <li><a [routerLink]="['dolor']">Dolor</a></li>   
         </ul>
       </li>
+      
       <li (click)="navigateTo('bulk-notification')" [ngClass]="{'selected': activeRoute === 'bulk-notification'}">Bulk Notification</li>
       <li (click)="navigateTo('guide-common')" [ngClass]="{'selected': activeRoute === 'guide-common'}">Guide Common</li>
       <li (click)="navigateTo('flash-cash-lite')" [ngClass]="{'selected': activeRoute === 'flash-cash-lite'}">Guide Flash Cash Lite</li>

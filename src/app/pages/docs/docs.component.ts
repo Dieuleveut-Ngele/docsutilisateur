@@ -53,6 +53,7 @@ import { Router, RouterLink, RouterOutlet } from '@angular/router';
 import { LoremComponent } from '../../components-docs/alla-guide/lorem/lorem.component';
 import { DolorComponent } from '../../components-docs/alla-guide/dolor/dolor.component';
 import { IpsumComponent } from '../../components-docs/alla-guide/ipsum/ipsum.component';
+import { WelcomAvatarComponent } from '../../welcom-avatar/welcom-avatar.component';
 
 @Component({
   selector: 'app-docs',
@@ -60,11 +61,9 @@ import { IpsumComponent } from '../../components-docs/alla-guide/ipsum/ipsum.com
   styleUrls: ['./docs.component.scss'],
   imports: [
     RouterOutlet,
+    WelcomAvatarComponent,
     CommonModule,
     RouterLink,
-    LoremComponent,
-    DolorComponent,
-    IpsumComponent,
     NgClass
   ],
   standalone: true
@@ -87,8 +86,12 @@ export class DocsComponent {
   }
 
   ngOnInit() {
-    // Optionnel : initialiser activeRoute avec la route actuelle
-    this.activeRoute = this.router.url.substring(1); // Extrait la route actuelle sans le '/'
+    this.activeRoute = this.router.url.substring(1); 
+  }
+
+
+  toggleParent(parent: string) {
+    this.activeParent = this.activeParent === parent ? null : parent;
   }
 }
 

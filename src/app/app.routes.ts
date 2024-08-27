@@ -30,16 +30,17 @@ import { RakkacashComponent } from './components-docs/rakkacash/rakkacash.compon
 import { ReportingFlashIdComponent } from './components-docs/reporting-flash-id/reporting-flash-id.component';
 import { RiaComponent } from './components-docs/ria/ria.component';
 import { SabaBaLarComponent } from './components-docs/saba-ba-lar/saba-ba-lar.component';
+import { WelcomAvatarComponent } from './welcom-avatar/welcom-avatar.component';
 
 export const routes: Routes = [
     
     { path: '', component: HomeComponent },
     { path: 'docs', component: DocsComponent, children: [
+        { path: 'lorem', component: WelcomAvatarComponent },
         { path: 'alla-guide', component: AllaGuideComponent, children: [
             { path: 'lorem', component: LoremComponent },
             { path: 'ipsum', component: IpsumComponent },
             { path: 'dolor', component: DolorComponent },
-            { path: 'bulk-notification', component: BulkNotificationComponent }
         ] },
         { path: 'bulk-notification', component: BulkNotificationComponent },
         { path: 'guide-common', component: GuideCommonComponent  },
