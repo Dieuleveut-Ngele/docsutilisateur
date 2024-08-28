@@ -23,15 +23,38 @@ h1 {
   .illustration img {  
     max-width: 400px;  
   }
+  // .container {  
+  //   text-align: center; 
+  //   background-image: url("https://img.freepik.com/photos-premium/pile-papiers-table-fond-bleu-clair-papiers-sont-empiles-semblent-etre-documents-importants-scene-est-serieuse-concentree-alors-que-papiers-sont-entasses-hauteur_1214132-3694.jpg?w=826");   
+  //   background-size: cover; 
+  //   background-position: center;  
+  //   background-repeat: no-repeat;  
+  //   filter: brightness(0.5); 
+  //   padding: 67px;     
+  // }
+  // .container {  
+  //   text-align: center; 
+  //   background-image: url("https://img.freepik.com/photos-gratuite/sketchbook-pres-ordinateur-portable-cafe_23-2147768817.jpg?size=626&ext=jpg&uid=R142855166&ga=GA1.1.907682730.1721986206&semt=ais_hybrid");   
+  //   background-size: cover; 
+  //   background-position: center;  
+  //   background-repeat: no-repeat;  
+  //   filter: brightness(0.5); 
+  //   padding: 67px;     
+  // }
+
   .container {  
     text-align: center; 
-    background-image: url("https://img.freepik.com/photos-premium/pile-papiers-table-fond-bleu-clair-papiers-sont-empiles-semblent-etre-documents-importants-scene-est-serieuse-concentree-alors-que-papiers-sont-entasses-hauteur_1214132-3694.jpg?w=826");   
-    background-size: cover;  
-    padding: 48px; 
-      
-  } 
+    background-image: url("https://img.freepik.com/premium-photo/mail-service-concept-with-computer-laptop-illustration_1162225-33996.jpg?size=626&ext=jpg&uid=R142855166&ga=GA1.2.907682730.1721986206&semt=ais_hybrid");   
+    background-size: cover;
+    background-position: center;  
+    background-repeat: no-repeat;  
+    filter: brightness(0.5);  
+    padding: 67px;     
+  }
+
   .container h1 {
     font-size: 60px;
+    color: #ffffff;
   }
   
   .container {  
@@ -57,6 +80,7 @@ h1 {
     background-color: #e0b120; /* Changement de couleur */
     transform: scale(1.05); /* Agrandissement léger */
   }
+  
 
   @keyframes slideIn {  
     0% {  
@@ -93,13 +117,8 @@ h1 {
     height: 150px;
     border-radius: 50%;
     animation: avatarBounce 2s infinite;
-  } 
-  .welcome-message {
-    margin-top: 20px;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
   }
+
   
   @keyframes avatarBounce {
     0%, 100% {

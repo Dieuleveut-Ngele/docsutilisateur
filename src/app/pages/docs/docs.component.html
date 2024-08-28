@@ -3,11 +3,11 @@
     <ul>
       <li (click)="navigateTo('alla-guide')" [ngClass]="{'selected': activeRoute === 'alla-guide'}">
         Alla Guide
-        <ul *ngIf="activeParent === 'alla-guide'">
+        <!-- <ul *ngIf="activeParent === 'alla-guide'">
             <li><a [routerLink]="['alla-guide/lorem']">Lorem</a></li>
             <li><a [routerLink]="['ipsum']">Ipsum</a></li>
             <li><a [routerLink]="['dolor']">Dolor</a></li>   
-        </ul>
+        </ul> -->
       </li>
       
       <li (click)="navigateTo('bulk-notification')" [ngClass]="{'selected': activeRoute === 'bulk-notification'}">Bulk Notification</li>
