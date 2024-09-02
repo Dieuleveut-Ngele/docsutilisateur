@@ -1,26 +1,48 @@
-h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  p {
-    font-size: 16px;
-  }
-.children-alla a {
-     display: flex;
-    justify-content: space-between;
-    background-color: #ffcc00;  
-    border: none;  
-    padding: 10px;  
-    border-radius: 5px;  
-    cursor: pointer;  
-    font-size: 1rem;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Assure que l'introduction occupe toute la hauteur de la page */
+  background-color: #f5f7fa; /* Couleur de fond douce */
+  font-family: 'Poppins', sans-serif; 
 }
 
-.ggg {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+.introduction {
+  text-align: center;
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Ombre douce */
+  max-width: 400px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-  
+
+.introduction:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.15); /* Effet de survol */
+}
+
+.introduction h3 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.introduction h3::before {
+  content: "👋";
+  content: "📄"; 
+  font-size: 2.5rem;
+  margin-right: 10px;
+  animation: wave 2s infinite;
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(15deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(-15deg); }
+  100% { transform: rotate(0deg); }
+}
