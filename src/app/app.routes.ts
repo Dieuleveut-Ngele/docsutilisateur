@@ -6,9 +6,7 @@ import { LoremComponent } from './components-docs/alla-guide/lorem/lorem.compone
 import { IpsumComponent } from './components-docs/alla-guide/ipsum/ipsum.component';
 import { DolorComponent } from './components-docs/alla-guide/dolor/dolor.component';
 import { BulkNotificationComponent } from './components-docs/bulk-notification/bulk-notification.component';
-import { GuideCommonComponent } from './components-docs/guide-common/guide-common.component';
 import { GuideFlashCashLiteComponent } from './components-docs/guide-flash-cash-lite/guide-flash-cash-lite.component';
-import { GuideFlashContactComponent } from './components-docs/guide-flash-contact/guide-flash-contact.component';
 import { GuideFlashMarchantComponent } from './components-docs/guide-flash-marchant/guide-flash-marchant.component';
 import { GuideFlashShopComponent } from './components-docs/guide-flash-shop/guide-flash-shop.component';
 import { GuideFlashTicketFlashPosComponent } from './components-docs/guide-flash-ticket-flash-pos/guide-flash-ticket-flash-pos.component';
@@ -30,23 +28,24 @@ import { RakkacashComponent } from './components-docs/rakkacash/rakkacash.compon
 import { ReportingFlashIdComponent } from './components-docs/reporting-flash-id/reporting-flash-id.component';
 import { RiaComponent } from './components-docs/ria/ria.component';
 import { SabaBaLarComponent } from './components-docs/saba-ba-lar/saba-ba-lar.component';
-import { WelcomAvatarComponent } from './welcom-avatar/welcom-avatar.component';
+import { GuideOperateurCashInEtOutComponent } from './components-docs/guide-operateur-cash-in-et-out/guide-operateur-cash-in-et-out.component';
+// import { WelcomAvatarComponent } from './welcom-avatar/welcom-avatar.component';
 
 export const routes: Routes = [
     
     { path: '', component: HomeComponent },
     { path: 'docs', component: DocsComponent, children: [
-        { path: 'lorem', component: WelcomAvatarComponent },
-        { path: 'alla-guide', component: AllaGuideComponent, children: [
-            { path: 'lorem', component: LoremComponent },
-            { path: 'ipsum', component: IpsumComponent },
-            { path: 'dolor', component: DolorComponent },
-        ] },
+        { path: '', component: AllaGuideComponent },
+        { path: 'introduction', component: AllaGuideComponent },
+        // { path: 'introduction', component: AllaGuideComponent, children: [
+        //     { path: 'lorem', component: LoremComponent },
+        //     { path: 'ipsum', component: IpsumComponent },
+        //     { path: 'dolor', component: DolorComponent },
+        // ] },
         { path: 'bulk-notification', component: BulkNotificationComponent },
-        { path: 'guide-common', component: GuideCommonComponent  },
         { path: 'flash-cash-lite', component: GuideFlashCashLiteComponent },
-        { path: 'flash-contact', component: GuideFlashContactComponent },
         { path: 'flash-marchant', component: GuideFlashMarchantComponent },
+        { path: 'flash-pos', component: GuideOperateurCashInEtOutComponent },
         { path: 'flash-shop', component: GuideFlashShopComponent },
         { path: 'flashticket-pos', component: GuideFlashTicketFlashPosComponent },
         { path: 'flashbank', component: GuideFlashBankComponent },

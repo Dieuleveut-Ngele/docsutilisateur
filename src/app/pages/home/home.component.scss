@@ -37,7 +37,7 @@ nav a {
       .nav-links a {
         display: inline-block;
         color: #ffffff; 
-        margin: 0 .45em;
+        margin: 0 .55em;
         padding: 0 .85em;
         text-decoration: none;
         background-image: linear-gradient(to right, currentColor, currentColor);
@@ -50,8 +50,8 @@ nav a {
       
       .nav-links a:hover {
         color: rgb(255, 196, 1);
-        background-size: 100% 1px;
-        
+        background-size: 75% 1px;
+        padding-bottom: 3px;
       }
       
   

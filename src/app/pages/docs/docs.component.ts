@@ -75,8 +75,8 @@ export class DocsComponent {
   constructor(private router: Router) {}
 
   navigateTo(route: string) {
-    if (route === 'alla-guide') {
-      this.activeParent = this.activeParent === 'alla-guide' ? null : 'alla-guide';
+    if (route === 'introduction') {
+      this.activeParent = this.activeParent === 'introduction' ? null : 'introduction';
     } else {
       this.activeParent = null;
     }
