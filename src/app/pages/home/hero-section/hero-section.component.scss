@@ -52,6 +52,7 @@ h1 {
   .container h1 {
     font-size: 60px;
     color: #ffffff;
+    font-weight: 500;
   }
   
   .container {  
@@ -74,8 +75,8 @@ h1 {
   }  
   
   .btn-commencer:hover {
-    background-color: #e0b120; /* Changement de couleur */
-    transform: scale(1.05); /* Agrandissement léger */
+    background-color: #e0b120; 
+    transform: scale(1.05); 
   }
 
 
