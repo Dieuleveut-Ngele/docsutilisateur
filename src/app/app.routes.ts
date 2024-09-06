@@ -8,7 +8,7 @@ import { DolorComponent } from './components-docs/alla-guide/dolor/dolor.compone
 import { BulkNotificationComponent } from './components-docs/bulk-notification/bulk-notification.component';
 import { GuideFlashCashLiteComponent } from './components-docs/guide-flash-cash-lite/guide-flash-cash-lite.component';
 import { GuideFlashMarchantComponent } from './components-docs/guide-flash-marchant/guide-flash-marchant.component';
-import { GuideFlashShopComponent } from './components-docs/guide-flash-shop/guide-flash-shop.component';
+import { GuideGestionStockComponent } from './components-docs/guide-flash-shop/guide-flash-shop.component';
 import { GuideFlashTicketFlashPosComponent } from './components-docs/guide-flash-ticket-flash-pos/guide-flash-ticket-flash-pos.component';
 import { GuideFlashBankComponent } from './components-docs/guide-flash-bank/guide-flash-bank.component';
 import { OperateurAfricellDataComponent } from './components-docs/operateur-africell-data/operateur-africell-data.component';
@@ -46,7 +46,7 @@ export const routes: Routes = [
         { path: 'flash-cash-lite', component: GuideFlashCashLiteComponent },
         { path: 'flash-marchant', component: GuideFlashMarchantComponent },
         { path: 'flash-pos', component: GuideOperateurCashInEtOutComponent },
-        { path: 'flash-shop', component: GuideFlashShopComponent },
+        { path: 'gestion-stock', component: GuideGestionStockComponent },
         { path: 'flashticket-pos', component: GuideFlashTicketFlashPosComponent },
         { path: 'flashbank', component: GuideFlashBankComponent },
         { path: 'operateur-africell-data', component: OperateurAfricellDataComponent },

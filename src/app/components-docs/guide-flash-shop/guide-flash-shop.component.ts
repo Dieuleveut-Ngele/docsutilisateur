@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './guide-flash-shop.component.html',
   styleUrl: './guide-flash-shop.component.scss'
 })
-export class GuideFlashShopComponent {
+export class GuideGestionStockComponent {
 
 }
