@@ -5,8 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './procedure-autorisation-acces.component.html',
-  styleUrl: './procedure-autorisation-acces.component.scss'
+  styleUrl: './procedure-autorisation-acces.component.scss',
 })
-export class ProcedureAutorisationAccesComponent {
-
-}
+export class ProcedureAutorisationAccesComponent {}

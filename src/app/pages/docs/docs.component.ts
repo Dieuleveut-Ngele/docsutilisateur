@@ -1,52 +1,3 @@
-// import { CommonModule, NgClass } from '@angular/common';
-// import { Component } from '@angular/core';
-// import {  Router, RouterLink, RouterOutlet } from '@angular/router';
-// import { LoremComponent } from '../../components-docs/alla-guide/lorem/lorem.component';
-// import { DolorComponent } from '../../components-docs/alla-guide/dolor/dolor.component';
-// import { IpsumComponent } from '../../components-docs/alla-guide/ipsum/ipsum.component';
-
-// @Component({
-//   selector: 'app-docs',
-//   templateUrl: './docs.component.html',
-//   styleUrls: ['./docs.component.scss'],
-//   imports: [
-//       RouterOutlet,
-//       CommonModule,
-//       RouterLink,
-//       LoremComponent,
-//       DolorComponent,
-//       IpsumComponent,
-//       NgClass
-//       ],
-//   standalone: true 
-// })
-// export class DocsComponent {
-//   activeParent: string | null = null;
-//   activeRoute!: string;
-
-//   constructor(private router: Router) {}
-
-//   navigateTo(route: string) {
-//     if (route === 'alla-guide') {
-//       this.activeParent = this.activeParent === 'alla-guide' ? null : 'alla-guide';
-//       this.router.navigate(['/docs', route]);
-//     } else {
-//       this.activeParent = null;
-//       this.router.navigate(['/docs', route]);
-//     }
-//   }
-
-//   navigate(route: string) {
-//     this.activeRoute = route;
-//     this.router.navigate([route]);
-//   }
-
-//   ngOnInit() {
-//     // Optionnel : initialiser activeRoute avec la route actuelle
-//     this.activeRoute = this.router.url.substring(1); // Extrait la route actuelle sans le '/'
-//   }
-// }
-
 import { CommonModule, NgClass } from '@angular/common';
 import { Component } from '@angular/core';
 import { Router, RouterLink, RouterOutlet } from '@angular/router';
@@ -54,6 +5,7 @@ import { LoremComponent } from '../../components-docs/alla-guide/lorem/lorem.com
 import { DolorComponent } from '../../components-docs/alla-guide/dolor/dolor.component';
 import { IpsumComponent } from '../../components-docs/alla-guide/ipsum/ipsum.component';
 import { WelcomAvatarComponent } from '../../welcom-avatar/welcom-avatar.component';
+import { ScrollToTopComponent } from '../../scroll-to-top/scroll-to-top.component';
 
 @Component({
   selector: 'app-docs',
@@ -62,39 +14,36 @@ import { WelcomAvatarComponent } from '../../welcom-avatar/welcom-avatar.compone
   imports: [
     RouterOutlet,
     WelcomAvatarComponent,
+    ScrollToTopComponent,
     CommonModule,
     RouterLink,
-    NgClass
+    NgClass,
   ],
-  standalone: true
+  standalone: true,
 })
 export class DocsComponent {
   activeParent: string | null = null;
-  activeRoute: string = ''; // Initialisation de activeRoute
+  activeRoute: string = ''; 
 
   constructor(private router: Router) {}
 
   navigateTo(route: string) {
     if (route === 'introduction') {
-      this.activeParent = this.activeParent === 'introduction' ? null : 'introduction';
+      this.activeParent =
+        this.activeParent === 'introduction' ? null : 'introduction';
     } else {
       this.activeParent = null;
     }
-    
-    this.activeRoute = route; // Mise à jour de la route active
+
+    this.activeRoute = route; 
     this.router.navigate(['/docs', route]);
   }
 
   ngOnInit() {
-    this.activeRoute = this.router.url.substring(1); 
+    this.activeRoute = this.router.url.substring(1);
   }
-
 
   toggleParent(parent: string) {
     this.activeParent = this.activeParent === parent ? null : parent;
   }
 }
-
-
-
-

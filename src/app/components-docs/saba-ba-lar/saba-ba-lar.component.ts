@@ -5,8 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './saba-ba-lar.component.html',
-  styleUrl: './saba-ba-lar.component.scss'
+  styleUrl: './saba-ba-lar.component.scss',
 })
-export class SabaBaLarComponent {
-
-}
+export class SabaBaLarComponent {}

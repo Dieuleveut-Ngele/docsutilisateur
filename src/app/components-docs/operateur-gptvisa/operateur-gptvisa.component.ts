@@ -5,8 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './operateur-gptvisa.component.html',
-  styleUrl: './operateur-gptvisa.component.scss'
+  styleUrl: './operateur-gptvisa.component.scss',
 })
-export class OperateurGPTVISAComponent {
-
-}
+export class OperateurGPTVISAComponent {}

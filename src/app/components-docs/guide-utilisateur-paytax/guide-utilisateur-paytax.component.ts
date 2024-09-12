@@ -5,8 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './guide-utilisateur-paytax.component.html',
-  styleUrl: './guide-utilisateur-paytax.component.scss'
+  styleUrl: './guide-utilisateur-paytax.component.scss',
 })
-export class GuideUtilisateurPaytaxComponent {
-
-}
+export class GuideUtilisateurPaytaxComponent {}

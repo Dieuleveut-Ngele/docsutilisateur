@@ -5,8 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './western-union.component.html',
-  styleUrl: './western-union.component.scss'
+  styleUrl: './western-union.component.scss',
 })
-export class WesternUnionComponent {
-
-}
+export class WesternUnionComponent {}

@@ -1,96 +1,93 @@
 .main-container {
-    margin-left: 50px;
+  margin-left: 50px;
 }
 
 .sidebar {
-    width: 310px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    overflow-y: auto;
-    background-color: #f5f6fa;
-    font-family: 'Arial, sans-serif';
-    font-size: 14px;
-    padding: 5px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-
+  width: 310px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow-y: auto;
+  background-color: #f5f6fa;
+  font-family: "Arial, sans-serif";
+  font-size: 14px;
+  padding: 5px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
 
 .sidebar ul li {
-    display: flex;
-    margin-bottom: 10px;
-    align-items: center;
-    height: 20px; 
-    line-height: 40px; 
-    // padding: 7px 10px; 
-   
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+  height: 20px;
+  line-height: 40px;
+  // padding: 7px 10px;
 }
 
 .sidebar ul li a {
-    list-style-type: none;
-    text-decoration: none;
-    color: #000;
+  list-style-type: none;
+  text-decoration: none;
+  color: #000;
 }
 
 .sidebar ul li img {
-    margin-right: 10px;
-    width: 20px;
-    height: 20px;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
 }
 
 .sidebar li:hover {
-    background-color: #dcdde1;
-    border-radius: 5px;
-    cursor: pointer;
-    padding: 7px;    
+  background-color: #dcdde1;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 7px;
 }
 
 .sidebar ul li a {
-    text-decoration: none;
-    color: #000;
-    text-decoration: underline;    
+  text-decoration: none;
+  color: #000;
+  text-decoration: underline;
 }
 
 .sidebar ul li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .sidebar ul li.selected {
-    background-color: #d0d0d041; 
-    padding: 10px;
-    font-weight: bold; 
-    border-radius: 5px;
+  background-color: #d0d0d041;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 5px;
 }
 
-.content {  
-    padding: 10px;
-    padding-bottom: 100%;
-    padding-left: 410px;
-    padding-right: 150px;
-    background-color: #ffffff;
-    font-family: 'Arial, sans-serif';
-    // overflow: hidden; /* Empêcher le débordement si nécessaire */
-    text-align: justify;
+.content {
+  padding: 10px;
+  padding-bottom: 100%;
+  padding-left: 410px;
+  padding-right: 150px;
+  background-color: #ffffff;
+  font-family: "Arial, sans-serif";
+  // overflow: hidden; /* Empêcher le débordement si nécessaire */
+  text-align: justify;
 }
-
 
 .content img {
-    display: block;
-    border-radius: 15px; 
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
-    width: 100%;
-    height: auto; /* Maintient le ratio d'aspect de l'image */
-    max-width: 120%; /* Permet de dépasser légèrement la largeur d'origine si nécessaire */
-    object-fit: cover; /* Assure que l'image couvre bien l'espace */
-    display: block; 
-   
+  display: block;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  width: 100%;
+  height: auto; /* Maintient le ratio d'aspect de l'image */
+  max-width: 120%; /* Permet de dépasser légèrement la largeur d'origine si nécessaire */
+  object-fit: cover; /* Assure que l'image couvre bien l'espace */
+  display: block;
 }
 
 .content img:hover {
-    transform: scale(1.05); 
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); 
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
-

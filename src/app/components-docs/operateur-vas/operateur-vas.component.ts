@@ -5,8 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './operateur-vas.component.html',
-  styleUrl: './operateur-vas.component.scss'
+  styleUrl: './operateur-vas.component.scss',
 })
-export class OperateurVasComponent {
-
-}
+export class OperateurVasComponent {}

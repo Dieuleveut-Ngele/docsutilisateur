@@ -4,12 +4,8 @@ import { RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-welcom-avatar',
   standalone: true,
-  imports: [
-    RouterOutlet
-  ],
+  imports: [RouterOutlet],
   templateUrl: './welcom-avatar.component.html',
-  styleUrl: './welcom-avatar.component.scss'
+  styleUrl: './welcom-avatar.component.scss',
 })
-export class WelcomAvatarComponent {
-
-}
+export class WelcomAvatarComponent {}

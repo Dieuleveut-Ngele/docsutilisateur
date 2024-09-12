@@ -5,8 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './guide-tv.component.html',
-  styleUrl: './guide-tv.component.scss'
+  styleUrl: './guide-tv.component.scss',
 })
-export class GuideTvComponent {
-
-}
+export class GuideTvComponent {}

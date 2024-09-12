@@ -5,8 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './guide-operateur-cash-in-et-out.component.html',
-  styleUrl: './guide-operateur-cash-in-et-out.component.scss'
+  styleUrl: './guide-operateur-cash-in-et-out.component.scss',
 })
-export class GuideOperateurCashInEtOutComponent {
-
-}
+export class GuideOperateurCashInEtOutComponent {}

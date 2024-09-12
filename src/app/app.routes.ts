@@ -32,70 +32,75 @@ import { GuideOperateurCashInEtOutComponent } from './components-docs/guide-oper
 // import { WelcomAvatarComponent } from './welcom-avatar/welcom-avatar.component';
 
 export const routes: Routes = [
-    
-    { path: '', component: HomeComponent },
-    { path: 'docs', component: DocsComponent, children: [
-        { path: '', component: AllaGuideComponent },
-        { path: 'introduction', component: AllaGuideComponent },
-        // { path: 'introduction', component: AllaGuideComponent, children: [
-        //     { path: 'lorem', component: LoremComponent },
-        //     { path: 'ipsum', component: IpsumComponent },
-        //     { path: 'dolor', component: DolorComponent },
-        // ] },
-        { path: 'bulk-notification', component: BulkNotificationComponent },
-        { path: 'flash-cash-lite', component: GuideFlashCashLiteComponent },
-        { path: 'flash-marchant', component: GuideFlashMarchantComponent },
-        { path: 'flash-pos', component: GuideOperateurCashInEtOutComponent },
-        { path: 'gestion-stock', component: GuideGestionStockComponent },
-        { path: 'flashticket-pos', component: GuideFlashTicketFlashPosComponent },
-        { path: 'flashbank', component: GuideFlashBankComponent },
-        { path: 'operateur-africell-data', component: OperateurAfricellDataComponent },
-        { path: 'operateur-gpt-visa', component: OperateurGPTVISAComponent },
-        { path: 'operateur-mtn', component: OperateurMTNComponent },
-        { path: 'operateur-telco', component: OperateurTelcoComponent },
-        { path: 'operateur-vas', component: OperateurVasComponent },
-        { path: 'operateur-vodacom-data', component: OperateurVodacomDataComponent },
-        { path: 'parametrage-compta', component: ParametrageComptaComponent },
-        { path: 'guide-tv', component: GuideTvComponent },
-        { path: 'guide-paytax', component: GuideUtilisateurPaytaxComponent },
-        { path: 'western-union', component: WesternUnionComponent },
-        { path: 'money-gram', component: MoneyGrameComponent },
-        { path: 'mukuru', component: MukuruComponent },
-        { path: 'procedure-autorisation-acces', component: ProcedureAutorisationAccesComponent },
-        { path: 'rakkacash', component: RakkacashComponent },
-        { path: 'reporting-flashid', component: ReportingFlashIdComponent },
-        { path: 'ria', component: RiaComponent },
-        { path: 'Sababalar', component: SabaBaLarComponent },
-        { path: '', redirectTo: 'alla-guide', pathMatch: 'full' }
-    ] },
-    { path: '**', redirectTo: '' }  
+  { path: '', component: HomeComponent },
+  {
+    path: 'docs',
+    component: DocsComponent,
+    children: [
+      { path: '', component: AllaGuideComponent },
+      { path: 'introduction', component: AllaGuideComponent },
+      // { path: 'introduction', component: AllaGuideComponent, children: [
+      //     { path: 'lorem', component: LoremComponent },
+      //     { path: 'ipsum', component: IpsumComponent },
+      //     { path: 'dolor', component: DolorComponent },
+      // ] },
+      { path: 'bulk-notification', component: BulkNotificationComponent },
+      { path: 'flash-cash-lite', component: GuideFlashCashLiteComponent },
+      { path: 'flash-marchant', component: GuideFlashMarchantComponent },
+      { path: 'flash-pos', component: GuideOperateurCashInEtOutComponent },
+      { path: 'gestion-stock', component: GuideGestionStockComponent },
+      { path: 'flashticket-pos', component: GuideFlashTicketFlashPosComponent },
+      { path: 'flashbank', component: GuideFlashBankComponent },
+      {
+        path: 'operateur-africell-data',
+        component: OperateurAfricellDataComponent,
+      },
+      { path: 'operateur-gpt-visa', component: OperateurGPTVISAComponent },
+      { path: 'operateur-mtn', component: OperateurMTNComponent },
+      { path: 'operateur-telco', component: OperateurTelcoComponent },
+      { path: 'operateur-vas', component: OperateurVasComponent },
+      {
+        path: 'operateur-vodacom-data',
+        component: OperateurVodacomDataComponent,
+      },
+      { path: 'parametrage-compta', component: ParametrageComptaComponent },
+      { path: 'guide-tv', component: GuideTvComponent },
+      { path: 'guide-paytax', component: GuideUtilisateurPaytaxComponent },
+      { path: 'western-union', component: WesternUnionComponent },
+      { path: 'money-gram', component: MoneyGrameComponent },
+      { path: 'mukuru', component: MukuruComponent },
+      {
+        path: 'procedure-autorisation-acces',
+        component: ProcedureAutorisationAccesComponent,
+      },
+      { path: 'rakkacash', component: RakkacashComponent },
+      { path: 'reporting-flashid', component: ReportingFlashIdComponent },
+      { path: 'ria', component: RiaComponent },
+      { path: 'Sababalar', component: SabaBaLarComponent },
+      { path: '', redirectTo: 'alla-guide', pathMatch: 'full' },
+    ],
+  },
+  { path: '**', redirectTo: '' },
 ];
-
-
-
-
-
-
 
 // export const routes: Routes = [
 //     { path: '', component: HomeComponent },
-//     { 
-//       path: 'docs', 
-//       component: DocsComponent, 
+//     {
+//       path: 'docs',
+//       component: DocsComponent,
 //       children: [
-//         { 
-//           path: 'alla-guide', 
-//           component: AllaGuideComponent, 
+//         {
+//           path: 'alla-guide',
+//           component: AllaGuideComponent,
 //           children: [
 //             { path: 'lorem', component: LoremComponent },
 //             { path: 'ipsum', component: IpsumComponent },
 //             { path: 'dolor', component: DolorComponent }
-//           ] 
+//           ]
 //         },
 //         { path: 'bulk-notification', component: BulkNotificationComponent },
 //         { path: '', redirectTo: 'alla-guide', pathMatch: 'full' }
-//       ] 
+//       ]
 //     },
-//     { path: '**', redirectTo: '' }  
+//     { path: '**', redirectTo: '' }
 //   ];
-  

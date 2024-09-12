@@ -4,13 +4,8 @@ import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-dolor',
   standalone: true,
-  imports: [
-    RouterLink
-  ],
+  imports: [RouterLink],
   templateUrl: './dolor.component.html',
   styleUrl: './dolor.component.scss',
-  
 })
-export class DolorComponent {
-
-}
+export class DolorComponent {}

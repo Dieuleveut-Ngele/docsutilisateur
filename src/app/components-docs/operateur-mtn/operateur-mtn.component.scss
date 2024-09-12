@@ -1,0 +1,26 @@
+
+  .input-with-icon {  
+    position: relative;  
+  }  
+
+  .input-with-icon input {  
+    padding-left: 30px; /* Espace pour l'icône */  
+  }  
+
+  .input-with-icon:before {  
+    content: '✖'; /* Icône de croix */  
+    color: yellow; /* Couleur jaune */  
+    position: absolute;  
+    left: 8px;  
+    top: 50%;  
+    transform: translateY(-50%);  
+    font-size: 24px; /* Taille de l'icône */  
+    pointer-events: none; /* Ne pas interférer avec le clic sur le champ */  
+  }  
+
+  body {  
+    font-family: Arial, sans-serif;  
+    margin: 20px;  
+} 
+
+

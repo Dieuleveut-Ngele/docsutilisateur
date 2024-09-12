@@ -5,8 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './ria.component.html',
-  styleUrl: './ria.component.scss'
+  styleUrl: './ria.component.scss',
 })
-export class RiaComponent {
-
-}
+export class RiaComponent {}
