@@ -128,16 +128,16 @@
         Mukuru
       </li>
       <li
-        (click)="navigateTo('procedure-autorisation-acces')"
-        [ngClass]="{ selected: activeRoute === 'procedure-autorisation-acces' }"
-      >
-        Procedure Autorisation Acces
-      </li>
-      <li
         (click)="navigateTo('rakkacash')"
         [ngClass]="{ selected: activeRoute === 'rakkacash' }"
       >
-        RakkaCash
+        RakkaCash 
+      </li>
+      <li
+        (click)="navigateTo('rakka-admin')"
+        [ngClass]="{ selected: activeRoute === 'rakka-admin' }"
+      >
+        RakkaCash Admin
       </li>
       <li
         (click)="navigateTo('reporting-flashid')"
@@ -152,16 +152,29 @@
         RIA
       </li>
       <li
+        (click)="navigateTo('ria-admin')"
+        [ngClass]="{ selected: activeRoute === 'ria-admin' }"
+      >
+        Ria Admin
+      </li>
+      <li
         (click)="navigateTo('Sababalar')"
-        [ngClass]="{ selected: activeRoute === 'Sababalar' }"
+        [ngClass]="{ selected: activeRoute === 'sababalar' }"
       >
         Sababalar
+      </li>
+      <li
+        (click)="navigateTo('saba-admin')"
+        [ngClass]="{ selected: activeRoute === 'saba-admin' }"
+      >
+        Sababalar Admin
       </li>
     </ul>
   </div>
 
   <div class="content">
+    
     <router-outlet></router-outlet>
-    <app-scroll-to-top></app-scroll-to-top>
   </div>
 </div>
+

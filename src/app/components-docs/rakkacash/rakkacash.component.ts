@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
   templateUrl: './rakkacash.component.html',
   styleUrl: './rakkacash.component.scss',
 })
-export class RakkacashComponent {}
+export class RakkacashComponent {
+  
+}
+
+
