@@ -28,6 +28,7 @@ import { GuideOperateurCashInEtOutComponent } from './components-docs/guide-oper
 import { RakkacashAdminComponent } from './components-docs/rakkacash-admin/rakkacash-admin.component';
 import { SababalarAdminComponent } from './components-docs/sababalar-admin/sababalar-admin.component';
 import { RiaAdminComponent } from './components-docs/ria-admin/ria-admin.component';
+import { RakkacashComplianceComponent } from './components-docs/rakkacash-compliance/rakkacash-compliance.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -61,7 +62,8 @@ export const routes: Routes = [
 
       { path: 'mukuru', component: MukuruComponent },
       { path: 'rakkacash', component: RakkacashComponent },  
-      { path: 'rakka-admin', component: RakkacashAdminComponent },   
+      { path: 'rakka-admin', component: RakkacashAdminComponent }, 
+      { path: 'rakka-compliance', component: RakkacashComplianceComponent},  
       { path: 'reporting-flashid', component: ReportingFlashIdComponent },
       { path: 'ria', component: RiaComponent },
 

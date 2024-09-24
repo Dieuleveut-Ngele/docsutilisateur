@@ -19,18 +19,13 @@
 
 .sidebar ul li {
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   align-items: center;
-  height: 20px;
+  height: 30px;
   line-height: 40px;
-  // padding: 7px 10px;
+//   padding-right: 7px;
 }
 
-.sidebar ul li a {
-  list-style-type: none;
-  text-decoration: none;
-  color: #000;
-}
 
 .sidebar ul li img {
   margin-right: 10px;
@@ -40,9 +35,9 @@
 
 .sidebar li:hover {
   background-color: #dcdde1;
-  border-radius: 5px;
+  border-radius: 2px;
   cursor: pointer;
-  padding: 7px;
+  padding: 5px;
 }
 
 .sidebar ul li a {
@@ -57,9 +52,9 @@
 
 .sidebar ul li.selected {
   background-color: #d0d0d041;
-  padding: 10px;
+  padding: 5px;
   font-weight: bold;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 .content {
@@ -69,7 +64,7 @@
   padding-right: 150px;
   background-color: #ffffff;
   font-family: "Arial, sans-serif";
-  // overflow: hidden; /* Empêcher le débordement si nécessaire */
+  overflow: hidden; 
   text-align: justify;
 }
 
@@ -78,12 +73,12 @@
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+  transform 0.3s ease,
+  box-shadow 0.3s ease;
   width: 100%;
-  height: auto; /* Maintient le ratio d'aspect de l'image */
-  max-width: 120%; /* Permet de dépasser légèrement la largeur d'origine si nécessaire */
-  object-fit: cover; /* Assure que l'image couvre bien l'espace */
+  height: auto; 
+  max-width: 120%; 
+  object-fit: cover; 
   display: block;
 }
 

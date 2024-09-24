@@ -140,6 +140,12 @@
         RakkaCash Admin
       </li>
       <li
+        (click)="navigateTo('rakka-compliance')"
+        [ngClass]="{ selected: activeRoute === 'rakka-compliance' }"
+      >
+        RakkaCash Compliance
+      </li>
+      <li
         (click)="navigateTo('reporting-flashid')"
         [ngClass]="{ selected: activeRoute === 'reporting-flashid' }"
       >
@@ -158,7 +164,7 @@
         Ria Admin
       </li>
       <li
-        (click)="navigateTo('Sababalar')"
+        (click)="navigateTo('sababalar')"
         [ngClass]="{ selected: activeRoute === 'sababalar' }"
       >
         Sababalar
