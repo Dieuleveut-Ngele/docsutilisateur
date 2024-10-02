@@ -146,6 +146,18 @@
         RakkaCash Compliance
       </li>
       <li
+        (click)="navigateTo('rakka-finance')"
+        [ngClass]="{ selected: activeRoute === 'rakka-finance' }"
+      >
+        RakkaCash Finance
+      </li>
+      <li
+      (click)="navigateTo('rakka-operateur')"
+      [ngClass]="{ selected: activeRoute === 'rakka-operateur' }"
+    >
+      RakkaCash Operateur
+    </li>
+      <li
         (click)="navigateTo('reporting-flashid')"
         [ngClass]="{ selected: activeRoute === 'reporting-flashid' }"
       >
@@ -164,6 +176,24 @@
         Ria Admin
       </li>
       <li
+        (click)="navigateTo('ria-compliance')"
+        [ngClass]="{ selected: activeRoute === 'ria-compliance' }"
+      >
+        Ria Compliance
+      </li>
+      <li
+        (click)="navigateTo('ria-finance')"
+        [ngClass]="{ selected: activeRoute === 'ria-finance' }"
+      >
+        Ria Finance
+      </li>
+      <li
+        (click)="navigateTo('ria-operateur')"
+        [ngClass]="{ selected: activeRoute === 'ria-operateur' }"
+      >
+        Ria Operateur
+      </li>
+      <li
         (click)="navigateTo('sababalar')"
         [ngClass]="{ selected: activeRoute === 'sababalar' }"
       >
@@ -174,6 +204,18 @@
         [ngClass]="{ selected: activeRoute === 'saba-admin' }"
       >
         Sababalar Admin
+      </li>
+      <li
+        (click)="navigateTo('saba-compliance')"
+        [ngClass]="{ selected: activeRoute === 'saba-compliance' }"
+      >
+        Sababalar Compliance
+      </li>
+      <li
+        (click)="navigateTo('saba-finance')"
+        [ngClass]="{ selected: activeRoute === 'saba-finance' }"
+      >
+        Sababalar Finance
       </li>
     </ul>
   </div>

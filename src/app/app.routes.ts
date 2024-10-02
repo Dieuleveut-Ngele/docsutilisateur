@@ -29,6 +29,13 @@ import { RakkacashAdminComponent } from './components-docs/rakkacash-admin/rakka
 import { SababalarAdminComponent } from './components-docs/sababalar-admin/sababalar-admin.component';
 import { RiaAdminComponent } from './components-docs/ria-admin/ria-admin.component';
 import { RakkacashComplianceComponent } from './components-docs/rakkacash-compliance/rakkacash-compliance.component';
+import { SababalarComplianceComponent } from './components-docs/sababalar-compliance/sababalar-compliance.component';
+import { SababalarFinanceComponent } from './components-docs/sababalar-finance/sababalar-finance.component';
+import { RakkacashFinanceComponent } from './components-docs/rakkacash-finance/rakkacash-finance.component';
+import { RakkacashOperateurComponent } from './components-docs/rakkacash-operateur/rakkacash-operateur.component';
+import { RiaComplianceComponent } from './components-docs/ria-compliance/ria-compliance.component';
+import { RiaFinanceComponent } from './components-docs/ria-finance/ria-finance.component';
+import { RiaOperateurComponent } from './components-docs/ria-operateur/ria-operateur.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -64,12 +71,19 @@ export const routes: Routes = [
       { path: 'rakkacash', component: RakkacashComponent },  
       { path: 'rakka-admin', component: RakkacashAdminComponent }, 
       { path: 'rakka-compliance', component: RakkacashComplianceComponent},  
+      { path: 'rakka-finance', component: RakkacashFinanceComponent},
+      { path: 'rakka-operateur', component: RakkacashOperateurComponent},
       { path: 'reporting-flashid', component: ReportingFlashIdComponent },
       { path: 'ria', component: RiaComponent },
 
       { path: 'ria-admin', component: RiaAdminComponent },
+      { path: 'ria-compliance', component: RiaComplianceComponent},
+      { path: 'ria-finance', component: RiaFinanceComponent},
+      { path: 'ria-operateur', component: RiaOperateurComponent},
       { path: 'sababalar', component: SabaBaLarComponent },
       { path: 'saba-admin', component: SababalarAdminComponent },
+      { path: 'saba-compliance', component: SababalarComplianceComponent},
+      { path: 'saba-finance', component: SababalarFinanceComponent},
       { path: '', redirectTo: 'introduction', pathMatch: 'full' },
     ],
   },
