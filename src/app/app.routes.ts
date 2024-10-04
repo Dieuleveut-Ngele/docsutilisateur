@@ -36,6 +36,9 @@ import { RakkacashOperateurComponent } from './components-docs/rakkacash-operate
 import { RiaComplianceComponent } from './components-docs/ria-compliance/ria-compliance.component';
 import { RiaFinanceComponent } from './components-docs/ria-finance/ria-finance.component';
 import { RiaOperateurComponent } from './components-docs/ria-operateur/ria-operateur.component';
+import { MukuruComplianceComponent } from './components-docs/mukuru-compliance/mukuru-compliance.component';
+import { MukuruFinanceComponent } from './components-docs/mukuru-finance/mukuru-finance.component';
+import { MukuruOperateurComponent } from './components-docs/mukuru-operateur/mukuru-operateur.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -68,6 +71,9 @@ export const routes: Routes = [
       { path: 'money-gram', component: MoneyGrameComponent },
 
       { path: 'mukuru', component: MukuruComponent },
+      { path: 'mukuru-compliance', component: MukuruComplianceComponent},
+      { path: 'mukuru-finance', component: MukuruFinanceComponent},
+      { path: 'mukuru-operateur', component: MukuruOperateurComponent},
       { path: 'rakkacash', component: RakkacashComponent },  
       { path: 'rakka-admin', component: RakkacashAdminComponent }, 
       { path: 'rakka-compliance', component: RakkacashComplianceComponent},  

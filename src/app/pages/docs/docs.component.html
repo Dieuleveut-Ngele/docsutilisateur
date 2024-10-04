@@ -23,7 +23,7 @@
         (click)="navigateTo('flash-pos')"
         [ngClass]="{ selected: activeRoute === 'flash-pos' }"
       >
-        Guide Operateur Flash POS
+        Operateur Cash In & Cash Out
       </li>
       <li
         (click)="navigateTo('flash-cash-lite')"
@@ -128,6 +128,24 @@
         Mukuru
       </li>
       <li
+        (click)="navigateTo('mukuru-compliance')"
+        [ngClass]="{ selected: activeRoute === 'mukuru-compliance' }"
+      >
+        Mukuru Compliance
+      </li>
+      <li
+        (click)="navigateTo('mukuru-finance')"
+        [ngClass]="{ selected: activeRoute === 'mukuru-finance' }"
+      >
+        Mukuru Finance
+      </li>
+      <li
+        (click)="navigateTo('mukuru-operateur')"
+        [ngClass]="{ selected: activeRoute === 'mukuru-operateur' }"
+      >
+        Mukuru Operateur
+      </li>
+      <li
         (click)="navigateTo('rakkacash')"
         [ngClass]="{ selected: activeRoute === 'rakkacash' }"
       >
@@ -152,11 +170,11 @@
         RakkaCash Finance
       </li>
       <li
-      (click)="navigateTo('rakka-operateur')"
-      [ngClass]="{ selected: activeRoute === 'rakka-operateur' }"
-    >
-      RakkaCash Operateur
-    </li>
+        (click)="navigateTo('rakka-operateur')"
+        [ngClass]="{ selected: activeRoute === 'rakka-operateur' }"
+      >
+        RakkaCash Operateur
+      </li>
       <li
         (click)="navigateTo('reporting-flashid')"
         [ngClass]="{ selected: activeRoute === 'reporting-flashid' }"
